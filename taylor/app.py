@@ -11,7 +11,7 @@ PAGE_CONFIG = {"page_title":"Taylor","page_icon":":smiley:","layout":"centered"}
 st.set_page_config(**PAGE_CONFIG)
 
 
-df=pd.read_csv('/content/song_df (1).csv')
+df=pd.read_csv('song_df (1).csv')
 song_df=df.filter(['song'])
 
 #calculating the similarities scores
