@@ -45,14 +45,12 @@ with col1:
     st.write("Get Recommendations for your favourite Taylor Swift songs based on your current emotional state.")
 with col2:    
    # st.image(image,width=300,height=200)
+    if choice:
+        st.subheader("More songs like "+choice )
+        recommendations=get_recommendations(choice)
+        st.table(recommendations)
 
-
-if choice:
-    st.subheader("More songs like "+choice )
-    recommendations=get_recommendations(choice)
-    st.table(recommendations)
-
-if not choice:
-    st.header('Pick a song')
-    st.subheader('recommendations will appear here :smiley:')
+    if not choice:
+        st.header('Pick a song')
+        st.subheader('recommendations will appear here :smiley:')
 
