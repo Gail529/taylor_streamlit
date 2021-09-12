@@ -12,7 +12,7 @@ PAGE_CONFIG = {"page_title":"Taylor","page_icon":":smiley:","layout":"centered"}
 st.set_page_config(**PAGE_CONFIG)
 
 
-#image = Image.open('tay_img.jpg')
+#image = Image.open('taylor/tay_img.jpg')
 
 df=pd.read_csv('taylor/song_df.csv')
 song_df=df.filter(['song'])
@@ -44,7 +44,7 @@ with col1:
     st.header("Music Recommendation Engine")
     st.write("Get Recommendations for your favourite Taylor Swift songs based on your current emotional state.")
 with col2:    
-    st.image(image,width=300,height=200)
+   # st.image(image,width=300,height=200)
 
 
 if choice:
