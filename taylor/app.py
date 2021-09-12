@@ -14,7 +14,7 @@ st.set_page_config(**PAGE_CONFIG)
 
 #image = Image.open('tay_img.jpg')
 
-df=pd.read_csv('song_df.csv')
+df=pd.read_csv('taylor/song_df.csv')
 song_df=df.filter(['song'])
 
 #calculating the similarities scores
