@@ -6,13 +6,10 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
-from PIL import Image
 from sklearn.metrics.pairwise import cosine_similarity
 PAGE_CONFIG = {"page_title":"Taylor","page_icon":":smiley:","layout":"centered"}
 st.set_page_config(**PAGE_CONFIG)
 
-
-image = Image.open('tay_img.jpg')
 
 df=pd.read_csv('/content/song_df (1).csv')
 song_df=df.filter(['song'])
