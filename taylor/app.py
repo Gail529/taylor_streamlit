@@ -44,7 +44,7 @@ with col1:
     st.header("Music Recommendation Engine")
     st.write("Get Recommendations for your favourite Taylor Swift songs based on your current emotional state.")
 with col2:
-    st.image(image,width=300,height=200)
+    st.image(image)
     if choice:
         st.subheader("More songs like "+choice )
         recommendations=get_recommendations(choice)
