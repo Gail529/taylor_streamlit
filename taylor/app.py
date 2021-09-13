@@ -6,13 +6,13 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
-#from PIL import Image
+from PIL import Image
 from sklearn.metrics.pairwise import cosine_similarity
 PAGE_CONFIG = {"page_title":"Taylor","page_icon":":smiley:","layout":"centered"}
 st.set_page_config(**PAGE_CONFIG)
 
 
-#image = Image.open('taylor/tay_img.jpg')
+image = Image.open('taylor/tay_img.jpg')
 
 df=pd.read_csv('taylor/song_df.csv')
 song_df=df.filter(['song'])
@@ -43,8 +43,8 @@ col1,col2=st.beta_columns(2)
 with col1:  
     st.header("Music Recommendation Engine")
     st.write("Get Recommendations for your favourite Taylor Swift songs based on your current emotional state.")
-with col2:    
-   # st.image(image,width=300,height=200)
+with col2:
+    st.image(image,width=300,height=200)
     if choice:
         st.subheader("More songs like "+choice )
         recommendations=get_recommendations(choice)
