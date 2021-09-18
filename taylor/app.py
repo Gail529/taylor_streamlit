@@ -38,7 +38,7 @@ st.sidebar.write("Select a song")
 st.sidebar.dataframe(song_df,500,400)
 
 
-col1,col2=st.beta_columns(2)
+col1,col2=st.columns(2)
 
 with col1:  
     st.header("Music Recommendation Engine")
